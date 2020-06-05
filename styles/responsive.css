@@ -29,3 +29,53 @@
     }
 }
 
+@media (max-width:660px){
+    form{
+        max-width: 420px;  
+        padding: 30px;  
+    }
+
+    form .field{
+        flex: none;
+    }
+
+    form .field-group{
+        flex-direction: column;
+    }
+
+    form .field-group .field + .field{
+        margin-left: 0;
+    }
+
+    form fieldset{
+        margin-top: 30px;
+    }
+
+    .items-grid{
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 375px){
+    #page-create-point header {
+        flex-direction: column;
+        height: 100px;
+    }
+    form{
+        margin-top: 30px;
+    }
+
+    form h2{
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px){
+    .items-grid li{
+        padding: 10px 5px;
+    }
+    .items-grid li img{
+        margin-top: 20px;
+    }
+}
